@@ -331,7 +331,10 @@ function DayFlash({ onProceed }: { onProceed: () => void }) {
           {!isComplete && <span className="type-caret ml-1 inline-block h-[1em] w-[0.08em] translate-y-[0.12em] bg-white" />}
         </div>
         {isComplete && (
-          <button className="flash-subtitle mt-5 text-sm font-medium tracking-wide text-white/85 transition hover:text-white sm:text-base" onClick={onProceed}>
+          <button
+            className="flash-subtitle mt-6 rounded-full bg-white/85 px-6 py-2.5 text-sm font-semibold lowercase tracking-[0.12em] text-[#062f22] shadow-sm transition hover:bg-mint hover:text-ink hover:shadow-panel sm:text-base"
+            onClick={onProceed}
+          >
             log my workout
           </button>
         )}
