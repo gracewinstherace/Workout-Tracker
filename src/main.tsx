@@ -332,7 +332,7 @@ function DayFlash({ onProceed }: { onProceed: () => void }) {
         </div>
         {isComplete && (
           <button
-            className="flash-subtitle mt-6 rounded-full bg-white/85 px-6 py-2.5 text-sm font-semibold lowercase tracking-[0.12em] text-[#062f22] shadow-sm transition hover:bg-mint hover:text-ink hover:shadow-panel sm:text-base"
+            className="flash-subtitle mt-1 rounded-full bg-white/85 px-6 py-2.5 text-sm font-semibold lowercase tracking-[0.12em] text-[#062f22] shadow-sm transition hover:bg-mint hover:text-ink hover:shadow-panel sm:text-base"
             onClick={onProceed}
           >
             log my workout
@@ -561,7 +561,7 @@ function DayWorkoutView({
           <p className="mt-1 text-sm text-ink/60">{workoutDay.exercises.length} logged exercise{workoutDay.exercises.length === 1 ? "" : "s"}</p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <button className="rounded-lg border border-moss/20 px-3 py-2 text-sm font-semibold text-moss transition hover:bg-mint" onClick={onBackToMonth}>
+          <button className="rounded-full bg-ink px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-moss hover:shadow-panel" onClick={onBackToMonth}>
             Back to Month
           </button>
           <button
